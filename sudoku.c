@@ -58,6 +58,11 @@ List* get_adj_nodes(Node* n){
             int k = 1;
             while(k<10){
                Node* adj=copy(n);
+               adj->sudo[i][j]=k;
+               if(is_valid(adj)){
+                  pushBack(list,adj);
+               }
+               k++;
             }
          } 
       }
