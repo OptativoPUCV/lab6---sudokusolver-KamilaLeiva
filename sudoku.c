@@ -58,7 +58,22 @@ int is_valid(Node* n){
          }
       }
    }
-   int 
+   int k = 0;
+   while(k<9){
+      int* subcuadrado = (int*) calloc(10,sizeof(int));
+      for(int i=0;i<9;i++){
+         for(int j=0;j<9;j++){
+            if(n->sudo[i][j]!=0){
+               if(subcuadrado[n->sudo[i][j]]==1) return 0;
+               subcuadrado[n->sudo[i][j]]=1;
+            }
+            
+         }
+         
+      }
+      k++;
+      
+   }
     return 1;
 }
 
