@@ -114,3 +114,9 @@ sudoku.c:92:16: error: ‘adj’ undeclared (first use in this function)
 sudoku.c:92:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 1e7eb40
+Mon 20 May 2024 01:07:29 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|0
+total_score: 70/70
+ee297e9
