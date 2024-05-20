@@ -64,7 +64,7 @@ int is_valid(Node* n){
       for(int i=0;i<9;i++){
          int x = 3*(k/3) + (i/3);
          int y = 3*(k%3) + (i%3);
-         if(n->sudo[x][y]==1){
+         if(n->sudo[x][y]!=0){
             if(subcuadrado[n->sudo[x][y]]==1) return 0;
             subcuadrado[n->sudo[x][y]]=1;
          }
