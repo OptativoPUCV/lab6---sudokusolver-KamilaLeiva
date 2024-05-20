@@ -49,11 +49,15 @@ int is_valid(Node* n){
       int* columna = (int*) calloc(10,sizeof(int));
       for(int j=0;j<9;j++){
          if(n->sudo[i][j]!=0){
-            if(fila[n->sudo[i][j]]==1) return 0;
+            if(fila[n->sudo[i][j]]==1){ 
+               return 0;
+            }
             fila[n->sudo[i][j]]=1;
          }
          if(n->sudo[j][i]!=0){
-            if(columna[n->sudo[j][i] ]==1) return 0;
+            if(columna[n->sudo[j][i] ]==1){
+               return 0;
+            }
             columna[n->sudo[j][i]]=1;
          }
       }
@@ -65,7 +69,9 @@ int is_valid(Node* n){
          int x = 3*(k/3) + (i/3);
          int y = 3*(k%3) + (i%3);
          if(n->sudo[x][y]!=0){
-            if(subcuadrado[n->sudo[x][y]]==1) return 0;
+            if(subcuadrado[n->sudo[x][y]]==1) {
+               return 0;
+            }
             subcuadrado[n->sudo[x][y]]=1;
          }
       }      
