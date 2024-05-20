@@ -69,9 +69,9 @@ int is_valid(Node* n){
             subcuadrado[n->sudo[x][y]]=1;
          }
       }      
-   }
       k++;
-    return 1;
+   }
+   return 1;
 }
 
 
