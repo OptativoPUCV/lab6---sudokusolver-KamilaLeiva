@@ -103,3 +103,14 @@ Mon 20 May 2024 01:03:59 PM UTC:
  1 file changed, 9 insertions(+), 3 deletions(-)
  tests:  0|0
 1f5c986
+Mon 20 May 2024 01:07:04 PM UTC: 
+ sudoku.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+sudoku.c: In function ‘get_adj_nodes’:
+sudoku.c:92:16: error: ‘adj’ undeclared (first use in this function)
+   92 |                adj->sudo[i][j]=k;
+      |                ^~~
+sudoku.c:92:16: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+1e7eb40
